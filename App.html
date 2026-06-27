@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie App</title>
+  <link rel="stylesheet" href="App.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Recommended</h2>
+      <div class="recommendations"></div>
+    </div>
+
+    <div class="main-content">
+      <!-- Top Section: Search Bar -->
+      <div class="search-section">
+        <input type="text" placeholder="Search movie..." value="">
+        <button class="search-btn">Search</button>
+        <div class="suggestions-box"></div>
+        
+        <select class="genre-filter">
+          <option value="all" selected>All Genres</option>
+          <option value="Action">Action</option>
+          <option value="Drama">Drama</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Romance">Romance</option>
+          <option value="Thriller">Thriller</option>
+          <!-- Add more as needed -->
+        </select>
+      </div>      
+
+      <!-- White Gap -->
+      <div class="section-gap"></div>
+
+      <!-- Bottom Section: Movie Result -->
+      <div class="result-box">
+        <!-- Movie cards will be dynamically added here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="App.js"></script>
+</body>
+</html>
